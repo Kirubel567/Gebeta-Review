@@ -6,6 +6,7 @@
 html, body {
     height: 100%;
     background-color:  #000538;
+    overflow-x: hidden;
 }
 body {
     line-height: 1.5;
