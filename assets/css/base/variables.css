@@ -1,0 +1,23 @@
+:root {
+    /* Colors */
+    --primary-color: #252953;
+    --accent-color: #06F30A;
+    --secondary-color: #FBFBFB;
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+    
+    /* Font Families */
+    --font-primary: 'Roboto', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-logo: 'Pacifico', cursive;
+    
+    /* Border Radius */
+    --border-radius-btn: 54px;
+    --border-radius-card: 12px;
+    
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+}
