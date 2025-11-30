@@ -1,0 +1,555 @@
+/* --- Variables & Reset --- */
+:root {
+    --primary-bg: #050A30;       
+    --secondary-bg: #1E2240;     
+    --accent-green: #39FF14;     
+    --text-white: #ffffff;
+    --text-grey: #cccccc;
+    --font-main: 'Montserrat', sans-serif;
+    --font-script: 'Pacifico', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+a { 
+    text-decoration: none; 
+    color: white;
+    transition: 0.3s; 
+}
+ul { 
+    list-style: none; 
+}
+
+/* --- Utility Classes --- */
+.script-font { 
+    font-family: var(--font-script); 
+}
+.text-green { 
+    color: var(--accent-green);
+}
+/* --- Layout Utility --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section-spacing { 
+    padding: 40px 0; 
+}
+.divider { 
+    border: 0; 
+    height: 1px; 
+    background: #333;
+     margin: 20px 0; 
+}
+
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.navbar .logo { 
+    font-size: 1.5rem; 
+}
+
+.nav-links { 
+    display: flex; 
+    gap: 30px; 
+}
+.nav-links a { 
+    font-weight: 700; 
+    font-size: 0.9rem;
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+}
+.nav-links a:hover, .active-link { 
+    color: var(--accent-green); 
+}
+
+/* --- About Section --- */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5%;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-size: 0.9rem;
+    color: var(--text-grey);
+    margin-bottom: 20px;
+}
+
+.about-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left col wider than right */
+    grid-template-rows: 200px 150px;
+    gap: 10px;
+}
+
+.gallery-item {
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark overlay on images */
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.gallery-item span {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    z-index: 2;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Specific styling for grid items to match image rounded corners */
+.off-campus {
+    border-top-left-radius: 60px; /* Big curve */
+}
+
+.delivery {
+    grid-column: span 2; /* Span full width at bottom */
+    border-bottom-left-radius: 60px; /* Big curve */
+}
+
+/* --- Divider --- */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 40px 5%;
+}
+
+/* --- Business Form Section --- */
+.business-section {
+    padding: 20px 5% 80px 5%;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.form-card {
+    background-color: var(--secondary-bg);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Center the card */
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.form-group { margin-bottom: 20px; }
+
+.form-group label {
+    display: block;
+    font-weight: 800;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--accent-green);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-family: var(--font-main);
+}
+
+.form-group textarea { resize: none; }
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.submit-btn:hover { transform: scale(1.02); }
+
+/* Customer Review CSS */
+/* --- Filter Bar --- */
+.filter-bar {
+    display: flex;
+    background-color: var(--accent-green);
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.filter-btn {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary-bg); /* Dark text on green */
+    /* border-radius: 40px; */
+    transition: 0.3s;
+}
+
+/* Middle button style */
+.filter-btn.white-bg {
+    background-color: white;
+    color: var(--accent-green);
+}
+
+/* Active/Hover states */
+.filter-btn.active { 
+    /* Usually signifies selected state */
+    font-weight: 900;
+} 
+
+.search-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* --- Hero Grid (On-Campus) --- */
+.section-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Left side wider */
+    gap: 15px;
+    height: 400px;
+}
+
+.hero-card, .small-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Large Left Card */
+.large-card {
+    display: flex;
+    align-items: flex-end; /* Push text to bottom */
+}
+
+.card-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    width: 100%;
+    padding: 20px;
+}
+
+.card-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.rating { 
+    margin-bottom: 10px; 
+    font-size: 0.9rem; 
+    font-weight: 600; 
+}
+.card-details {
+     display: flex; 
+     gap: 20px;
+    font-size: 0.8rem; 
+    color: #ddd;
+}
+.detail-item i { 
+    margin-right: 5px; 
+}
+
+/* Right Grid (4 small images) */
+.small-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.see-more-overlay {
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* --- Menu Section --- */
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Horizontal scroll if too many items */
+    padding-bottom: 20px;
+}
+
+/* Hide scrollbar for cleaner look */
+.menu-grid::-webkit-scrollbar { 
+    display: none; 
+}
+
+.food-card {
+    min-width: 180px;
+}
+
+.food-img {
+    height: 160px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.price-tag {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    backdrop-filter: blur(2px);
+}
+
+.food-card h4 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.rating-mini { 
+    font-size: 0.75rem; 
+    color: #ccc;
+}
+
+.btn-outline {
+    display: block;
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid var(--accent-green);
+    color: var(--accent-green);
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-outline:hover { background: var(--accent-green); color: var(--primary-bg); }
+
+/* --- Reviews Section --- */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 cols */
+    gap: 40px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--secondary-bg);
+}
+
+.reviewer-info h5 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.reviewer-info .small-text {
+    font-size: 0.7rem;
+    color: var(--text-grey);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.review-text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #ddd;
+    text-transform: uppercase; /* Match design style */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--secondary-bg);
+    padding: 60px 5% 20px 5%;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.logo-large {
+     font-size: 2rem;
+}
+
+.footer-col ul li { 
+    margin-bottom: 10px; 
+}
+.footer-col ul li a { 
+    color: var(--text-grey); 
+    text-transform: lowercase; 
+}
+
+.small-text {
+    font-size: 0.8rem;
+    color: var(--text-grey);
+    margin-bottom: 15px;
+    max-width: 200px;
+}
+
+.footer-btn {
+    background-color: var(--accent-green);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.social-col { display: flex; gap: 15px; align-items: flex-start; }
+.social-col i { font-size: 1.5rem; }
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #666;
+    font-size: 0.75rem;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .about-section { 
+        flex-direction: column;
+     }
+    .hero-grid {
+        grid-template-columns: 1fr;
+        height:auto;
+    }
+    .small-grid{
+        height: 300px;
+        margin-top:15px;
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container { 
+        flex-direction: column;
+     }
+    .image-grid { 
+        width: 100%; 
+    }
+    .menu-grid{
+        padding-bottom: 10px;
+    }
+    .navbar { flex-direction: column; gap: 15px; }
+}
