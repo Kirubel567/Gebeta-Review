@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+
 body {
-  background-color: var(--primary-color);
+    background-color: var(--primary-bg);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+a { 
+    text-decoration: none; 
+    color: white;
+    transition: 0.3s; 
+}
+ul { 
+    list-style: none; 
 }

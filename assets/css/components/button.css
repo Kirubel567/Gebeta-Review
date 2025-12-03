@@ -1,0 +1,17 @@
+/* submit button */
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.submit-btn:hover { transform: scale(1.02); }
