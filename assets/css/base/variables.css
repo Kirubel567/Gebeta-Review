@@ -1,0 +1,21 @@
+:root {
+  /* colors */
+  --primary-color: #000538;
+  --secondary-color: #06f30a;
+  --thirtiary-color: #252953;
+
+  /* fonts */
+  --heading: 3.125rem;
+  --paragraph-font: 1.5625rem;
+  --heading-two: 1.5625rem; 
+
+  /* size */
+  --margin: 3.625rem; 
+  --margin-top: 2rem; 
+  --span-distance: 79.875rem; /* the distance of the whole content except the margin */
+
+  /* font faces */
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+}
