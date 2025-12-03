@@ -9,20 +9,35 @@
     <link rel="stylesheet" href="assets/css/pages/reviews.css">
 </head>
 <body>
+     <!-- nav section -->
+    <section id="nav-bar">
+      <nav class="nav">
+        <!-- container div -->
+        <div class="nav-container">
+          <!-- logo -->
+          <div class="logo-div">
+            <span>Gebeta</span>
+          </div>
+          <!-- menu div -->
+          <div class="menu-div">
+            <a href="./index.html" class="menu-list">Home</a>
+            <a href="./reviews.html" class="menu-list">Reviews</a>
+            <a href="./delivery.html" class="menu-list">Delivery</a>
+            <a href="./about.html" class="menu-list">About</a>
+          </div>
 
-    <nav class="navbar">
-        <div class="logo">
-            <span class="script-font text-green">Gebeta</span>
+          <!--Hamburger Button -->
+          <!-- @todo add javascript to make it interactive -->
+          <div class="hamburger-container">
+            <button class="hamburger">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#reviews.html" class="active-link">Reviews</a></li>
-            <li><a href="#delivery.html">Delivery</a></li>
-            <li><a href="#Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
+      </nav>
+    </section>
     <main>
         <div class="container">
             <div class="filter-bar">
@@ -180,8 +195,8 @@
             <div class="footer-col">
                 <h4>Get Involved</h4>
                 <p class="small-text">Submit Your Details And Get Featured On Our Platform.</p>
-                <button class="footer-btn script-font">Submit Application</button>
-            </div>
+                <a href="#business-sec"><button class="footer-btn script-font">Submit Application</button>
+            </div></a>
 
             <div class="footer-col social-col">
                 <a href="#"><i class="fa-brands fa-twitter"></i></a> <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -192,7 +207,7 @@
         <div class="copyright">
             <p>&copy; 2025 <span class="script-font text-green">Gebeta</span> — Built by Students, for Students.</p>
         </div>
-    </footer>
+</footer>
 
 
 </body>
