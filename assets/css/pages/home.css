@@ -1,5 +1,6 @@
 /* home.css */
 :root {
+
     /* Colors */
     --primary-color: #252953;
     --accent-color: #06F30A;
@@ -21,6 +22,15 @@
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
+
+    --primary-bg: #050A30;       
+    --secondary-bg: #252953;     
+    --accent-green: #39FF14;     
+    --text-white: #ffffff;
+    --text-grey: #cccccc;
+    --font-main: 'Poppins', sans-serif;
+    --font-script: 'Pacifico', cursive;
+    --font-desc: 'Roboto', sans-serif;
 }
 * {
     margin: 0;
@@ -639,3 +649,94 @@ hr {
     
     footer { padding: 25px 15px; }
 }
+/* nav bar */
+.nav {
+  background-color: var(--secondary-bg);
+  padding: 0.5rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: white;
+  margin-left: 3.625rem;
+  margin-right: 3.625rem;
+}
+
+.logo-div {
+  font-family: var(--font-script);
+  color: var(--accent-green);
+  font-size: 2.5rem;
+}
+
+.menu-div {
+  display: flex;
+  align-items: center;
+  gap: 3.2375rem;
+  font-family: var(--font-main);
+  font-size: 1rem;
+}
+
+.menu-list {
+  font-weight: bold;
+  transition: 0.5s ease;
+  color: white;
+  text-decoration: none;
+}
+.menu-list:hover {
+  color: var(--accent-green);
+  cursor: pointer;
+}
+
+/* hamburger menu */
+.hamburger-container {
+  position: absolute;
+  right: 0;
+  top: 1.875rem;
+  z-index: 10;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+@media (min-width: 768px) {
+  .hamburger-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
+}
+/* end of navbar */
