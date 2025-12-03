@@ -1,6 +1,128 @@
-@import '../base/reset.css';
-@import '../base/variable.css'; 
-@import '../layout/header.css'; 
+/* deliever.css */
+:root {
+  /* colors */
+  --primary-color: #000538;
+  --secondary-color: #06f30a;
+  --thirtiary-color: #252953;
+
+  /* fonts */
+  --heading: 3.125rem;
+  --paragraph-font: 1.5625rem;
+  --heading-two: 1.5625rem; 
+
+  /* size */
+  --margin: 3.625rem; 
+  --margin-top: 2rem; 
+  --span-distance: 79.875rem; /* the distance of the whole content except the margin */
+
+  /* font faces */
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+}
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+/* nav bar */
+.nav {
+  background-color: var(--thirtiary-color);
+  padding: 0.5rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: white;
+  margin-left: 3.625rem;
+  margin-right: 3.625rem;
+}
+
+.logo-div {
+  font-family: var(--font-pacifico);
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+}
+
+.menu-div {
+  display: flex;
+  align-items: center;
+  gap: 3.2375rem;
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+}
+
+.menu-list {
+  font-weight: bold;
+  transition: 0.5s ease;
+  color: white;
+  text-decoration: none;
+}
+.menu-list:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* hamburger menu */
+.hamburger-container {
+  position: absolute;
+  right: 0;
+  top: 1.875rem;
+  z-index: 10;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+@media (min-width: 768px) {
+  .hamburger-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
+}
+/* end of navbar */
 
 /* button and heading one */
 .btn-container {
@@ -262,3 +384,94 @@
 }
 /* end of review section */
 
+/* footer section */
+footer{
+    background-color: var(--thirtiary-color); 
+    padding-top: 2.44rem; 
+    margin-top: 2rem; 
+    padding-bottom: 0.1rem; 
+}
+
+.footer-container{
+    display: flex; 
+    justify-content: space-between; 
+    margin-left: var(--margin); 
+    margin-right: var(--margin);
+    margin-bottom: 5.2rem; 
+}
+
+.footer-container .first-heading{
+    font-family: var(--font-pacifico); 
+    font-size: var(--heading); 
+    color: var(--secondary-color); 
+    font-weight: 100; 
+}
+
+.menu h1{
+    color: white; 
+    font-family: var(--font-poppins); 
+    font-weight: 400; 
+    margin-bottom: 0.92rem; 
+}
+.menu ul{
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 1.25rem; 
+}
+
+li{
+    margin-bottom: 1.63rem; 
+}
+li a{
+    text-decoration: none; 
+    color: white; 
+    font-family: var(--font-roboto); 
+    transition: 0.5s ease; 
+}
+li a:hover{
+    color: var(--secondary-color); 
+}
+
+.get-involved{
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.99rem; 
+    color: white; 
+}
+.get-involved h1{
+    font-family: var(--font-poppins); 
+    font-weight: normal; 
+    /* margin-bottom: 2.63rem;  */
+}
+.get-involved p{
+    font-family: var(--font-roboto); 
+    font-size: 1.13rem; 
+    max-width: 250px; 
+}
+.submit{
+    background-color: var(--secondary-color); 
+    border: 2px solid var(--secondary-color); 
+    font-size: 1.13rem; 
+    color: white; 
+    font-family: var(--font-pacifico); 
+    width: 250px; 
+    height: 76.89px;  
+    border-radius: 54px; 
+}
+.socials a{
+    margin-left: 1.94rem; 
+    width: 2.88rem; 
+    height: 2.88rem; 
+}
+.copyright{
+    color: white; 
+    text-align: center; 
+    font-family: var(--font-roboto); 
+    opacity: 70%; 
+    margin-bottom: 3.6rem; 
+}
+span{
+    font-family: var(--font-pacifico); 
+    color: var(--secondary-color); 
+}
