@@ -1,6 +1,6 @@
 /* nav bar */
 .nav {
-  background-color: var(--thirtiary-color);
+  background-color: var(--secondary-bg);
   padding: 0.5rem 0;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .logo-div {
-  font-family: var(--font-pacifico);
-  color: var(--secondary-color);
+  font-family: var(--font-script);
+  color: var(--accent-green);
   font-size: 2.5rem;
 }
 
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   gap: 3.2375rem;
-  font-family: var(--font-poppins);
+  font-family: var(--font-main);
   font-size: 1rem;
 }
 
@@ -35,7 +35,7 @@
   text-decoration: none;
 }
 .menu-list:hover {
-  color: var(--secondary-color);
+  color: var(--accent-green);
   cursor: pointer;
 }
 

@@ -1,0 +1,14 @@
+/* main.css */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './layout/header.css';
+@import './layout/footer.css';
+@import './layout/layout.css';
+@import './components/button.css';
+@import './components/card.css';
+@import './components/review-card.css';
+@import './components/delivery-card.css';
+@import './pages/home.css';
+@import './pages/reviews.css';
+@import './pages/delivery.css';
+@import './pages/about.css';
