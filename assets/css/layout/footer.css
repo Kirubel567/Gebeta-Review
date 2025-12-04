@@ -1,3 +1,4 @@
+
 /* --- Footer --- */
 footer {
     background-color: var(--secondary-bg);
@@ -56,4 +57,14 @@ footer {
     padding-top: 20px;
     color: #666;
     font-size: 0.75rem;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    
+
+    .footer-container { 
+        flex-direction: column;
+     }
+    
 }

@@ -1,269 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gebeta - Reviews & Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
 
-    <!-- nav section -->
-    <section id="nav-bar">
-      <nav class="nav">
-        <!-- container div -->
+    <!-- Navigation Menu -->
+    <nav class="nav">
         <div class="nav-container">
-          <!-- logo -->
-          <div class="logo-div">
-            <span>Gebeta</span>
-          </div>
-          <!-- menu div -->
-          <div class="menu-div">
-            <a href="./index.html" class="menu-list">Home</a>
-            <a href="./reviews.html" class="menu-list">Reviews</a>
-            <a href="./delivery.html" class="menu-list">Delivery</a>
-            <a href="./about.html" class="menu-list">About</a>
-          </div>
+            <!-- logo -->
+            <div class="logo-div">
+                <span>Gebeta</span>
+            </div>
+            <!-- menu div -->
+            <div class="menu-div">
+                <a href="./index.html" class="menu-list">Home</a>
+                <a href="./reviews.html" class="menu-list">Reviews</a>
+                <a href="./delivery.html" class="menu-list">Delivery</a>
+                <a href="./about.html" class="menu-list">About</a>
+            </div>
 
-          <!--Hamburger Button -->
-          <!-- @todo add javascript to make it interactive -->
-          <div class="hamburger-container">
-            <button class="hamburger">
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
+            <!-- Hamburger Button -->
+            <div class="hamburger-container">
+                <button class="hamburger">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
         </div>
-      </nav>
-    </section>
+    </nav>
 
     <main>
-        <section class="container section-spacing">
-            <h2 class="section-heading">ON-CAMPUS</h2>
-            
+        <section class="container" style="padding: 40px 20px;">
+            <h2 class="section-title">ON-CAMPUS</h2>
+
             <div class="hero-grid">
-                <div class="hero-card large-card" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop');">
-                    <div class="card-overlay">
+                <div class="main-card">
+                    <div class="main-card-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop');">
+                    </div>
+                    <div class="main-card-content">
                         <h3>STUDENT CENTER CAFETERIA</h3>
-                        <div class="rating">
-                            <i class="fa-solid fa-star text-green"></i>
-                            <i class="fa-solid fa-star text-green"></i>
-                            <i class="fa-solid fa-star text-green"></i>
-                            <i class="fa-solid fa-star text-green"></i>
-                            <i class="fa-solid fa-star-half-stroke text-green"></i>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
                             <span>4.5 (234 REVIEWS)</span>
                         </div>
                         <div class="card-details">
-                            <div class="detail-item"><i class="fa-solid fa-location-dot"></i> 5K DORMITORY</div>
-                            <div class="detail-item"><i class="fa-solid fa-users"></i> Large Group Friendly</div>
-                            <div class="detail-item"><i class="fa-solid fa-calendar"></i> Open Until 6pm</div>
+                            <div><i class="fa-solid fa-location-dot"></i> 5K DORMITORY</div>
+                            <div><i class="fa-solid fa-users"></i> Large Group Friendly</div>
+                            <div><i class="fa-solid fa-calendar"></i> Open Until 6pm</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="small-grid">
-                    <div class="small-card" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=400&auto=format&fit=crop');"></div>
-                    <div class="small-card" style="background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=400&auto=format&fit=crop');"></div>
-                    <div class="small-card" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=400&auto=format&fit=crop');"></div>
-                    <div class="small-card" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=400&auto=format&fit=crop');">
-                        <div class="see-more-overlay">See All Photos</div>
+                <div class="peek-card"
+                    style="display: flex; flex-direction: column; gap: 10px; background: transparent;">
+                    <div
+                        style="flex: 1; background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=400&auto=format&fit=crop'); background-size: cover; border-radius: 10px;">
+                    </div>
+                    <div
+                        style="flex: 1; background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=400&auto=format&fit=crop'); background-size: cover; border-radius: 10px;">
                     </div>
                 </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="./submitReviews.html"><button class="btn btn-primary">Review</button></a>
             </div>
         </section>
 
         <hr class="divider">
 
-        <section class="container section-spacing">
-            <h2 class="section-heading">MENU</h2>
-            <h3 class="sub-heading">TOP</h3>
+        <section class="container" style="padding: 40px 20px;">
+            <h2 class="section-title">MENU</h2>
+            <h3 style="font-family: var(--font-heading); margin-bottom: 20px;">TOP</h3>
 
-            <div class="menu-grid">
-                <a href="./components/menu.html">
-                    <div class="food-card">
-                    <div class="food-img" style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=400&auto=format&fit=crop');">
-                        <span class="price-tag">120 ETB</span>
+            <div class="businesses-grid">
+
+                <div class="business-card">
+                    <div class="business-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=400&auto=format&fit=crop"
+                            alt="Food">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); padding: 5px 10px; border-radius: 5px; font-weight: bold;">
+                            120 ETB</div>
                     </div>
-                    <h4>BEYAYNET</h4>
-                    <div class="rating-mini">
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
+                    <h4 style="margin: 10px 0;">BEYAYNET</h4>
+                    <div class="rating-stars" style="font-size: 0.8rem; margin-bottom: 10px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                         <span>4.5 (234)</span>
                     </div>
                 </div>
-                </a>
-                
 
-                <div class="food-card">
-                    <div class="food-img" style="background-image: url('https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=400&auto=format&fit=crop');">
-                        <span class="price-tag">120 ETB</span>
+                <div class="business-card">
+                    <div class="business-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=400&auto=format&fit=crop"
+                            alt="Food">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); padding: 5px 10px; border-radius: 5px; font-weight: bold;">
+                            120 ETB</div>
                     </div>
-                    <h4>SPAGHETTI</h4>
-                    <div class="rating-mini">
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
+                    <h4 style="margin: 10px 0;">SPAGHETTI</h4>
+                    <div class="rating-stars" style="font-size: 0.8rem; margin-bottom: 10px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                         <span>4.5 (220)</span>
                     </div>
                 </div>
 
-                <div class="food-card">
-                    <div class="food-img" style="background-image: url('https://images.unsplash.com/photo-1601356616077-695728ae17ec?q=80&w=400&auto=format&fit=crop');">
-                        <span class="price-tag">120 ETB</span>
+                <div class="business-card">
+                    <div class="business-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1601356616077-695728ae17ec?q=80&w=400&auto=format&fit=crop"
+                            alt="Food">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); padding: 5px 10px; border-radius: 5px; font-weight: bold;">
+                            120 ETB</div>
                     </div>
-                    <h4>BEYAYNET</h4>
-                    <div class="rating-mini">
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
+                    <h4 style="margin: 10px 0;">BEYAYNET</h4>
+                    <div class="rating-stars" style="font-size: 0.8rem; margin-bottom: 10px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                         <span>4.5 (234)</span>
                     </div>
                 </div>
 
-                <div class="food-card">
-                    <div class="food-img" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop');">
-                        <span class="price-tag">120 ETB</span>
+                <div class="business-card">
+                    <div class="business-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                            alt="Food">
+                        <div
+                            style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); padding: 5px 10px; border-radius: 5px; font-weight: bold;">
+                            120 ETB</div>
                     </div>
-                    <h4>BEYAYNET</h4>
-                    <div class="rating-mini">
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <span>4.5 (234)</span>
-                    </div>
-                </div>
-                 <div class="food-card">
-                    <div class="food-img" style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=400&auto=format&fit=crop');">
-                        <span class="price-tag">120 ETB</span>
-                    </div>
-                    <h4>BEYAYNET</h4>
-                    <div class="rating-mini">
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
-                        <i class="fa-solid fa-star text-green"></i>
+                    <h4 style="margin: 10px 0;">BEYAYNET</h4>
+                    <div class="rating-stars" style="font-size: 0.8rem; margin-bottom: 10px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                         <span>4.5 (234)</span>
                     </div>
                 </div>
             </div>
 
-            <a href="./components/menu.html"><button class="btn-outline script-font">Full Menu</button>
-        </section></a>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="./components/menu.html"><button class="btn btn-outline">Full Menu</button></a>
+            </div>
+        </section>
 
         <hr class="divider">
 
-        <section class="container section-spacing">
-            <h2 class="section-heading">REVIEWS</h2>
-            
-            <div class="reviews-grid">
-                <div class="review-card">
+        <section class="container" style="padding: 40px 20px;">
+            <h2 class="section-title">REVIEWS</h2>
+
+            <div class="reviews-list">
+                <div class="review-item">
                     <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="User">
+                        <img class="reviewer-img"
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+                            alt="User">
                         <div class="reviewer-info">
-                            <h5>SELAM TADESSE</h5>
-                            <span class="small-text">4th Year</span>
-                            <div class="stars">
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
+                            <h4>SELAM TADESSE</h4>
+                            <p>4th Year</p>
+                            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">"I HAD AN AMAZING EXPERIENCE AT THIS RESTAURANT! THE PLACE WAS CLEAN, BEAUTIFULLY DECORATED, AND THE STAFF WERE INCREDIBLY POLITE. I ORDERED THE BEEF TIBS WITH INJERA, AND IT WAS ABSOLUTELY PERFECT."</p>
+                    <p class="review-body">"I HAD AN AMAZING EXPERIENCE AT THIS RESTAURANT! THE PLACE WAS CLEAN,
+                        BEAUTIFULLY DECORATED, AND THE STAFF WERE INCREDIBLY POLITE. I ORDERED THE BEEF TIBS WITH
+                        INJERA, AND IT WAS ABSOLUTELY PERFECT."</p>
                 </div>
 
-                <div class="review-card">
+                <div class="review-item">
                     <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="User">
+                        <img class="reviewer-img"
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+                            alt="User">
                         <div class="reviewer-info">
-                            <h5>Miheret</h5>
-                            <span class="small-text">CC, AAU</span>
-                            <div class="stars">
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
+                            <h4>Miheret</h4>
+                            <p>CC, AAU</p>
+                            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">"I HAD AN AMAZING EXPERIENCE AT THIS RESTAURANT! THE PLACE WAS CLEAN, BEAUTIFULLY DECORATED, AND THE STAFF WERE INCREDIBLY POLITE. TASTED FRESH AND NATURAL. NOT SUGARY LIKE OTHER PLACES."</p>
+                    <p class="review-body">"I HAD AN AMAZING EXPERIENCE AT THIS RESTAURANT! THE PLACE WAS CLEAN,
+                        BEAUTIFULLY DECORATED, AND THE STAFF WERE INCREDIBLY POLITE. TASTED FRESH AND NATURAL. NOT
+                        SUGARY LIKE OTHER PLACES."</p>
                 </div>
 
-                <div class="review-card">
+                <div class="review-item">
                     <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop" alt="User">
+                        <img class="reviewer-img"
+                            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop"
+                            alt="User">
                         <div class="reviewer-info">
-                            <h5>Kenean Eshetu</h5>
-                            <span class="small-text">Freshman, AAU</span>
-                            <div class="stars">
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
+                            <h4>Kenean Eshetu</h4>
+                            <p>Freshman, AAU</p>
+                            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">"I HAD AN AMAZING EXPERIENCE AT THIS RESTAURANT! THE PLACE WAS CLEAN, BEAUTIFULLY DECORATED, AND THE STAFF WERE INCREDIBLY POLITE. I ORDERED THE BEEF TIBS WITH INJERA."</p>
+                    <p class="review-body">"I HAD AN AMAZING EXPERIENCE AT THIS RESTAURANT! THE PLACE WAS CLEAN,
+                        BEAUTIFULLY DECORATED, AND THE STAFF WERE INCREDIBLY POLITE. I ORDERED THE BEEF TIBS WITH
+                        INJERA."</p>
                 </div>
 
-                <div class="review-card">
+                <div class="review-item">
                     <div class="review-header">
-                        <img src="" alt="User">
+                        <img class="reviewer-img"
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+                            alt="User">
                         <div class="reviewer-info">
-                            <h5>Beza </h5>
-                            <span class="small-text">3rd Year</span>
-                            <div class="stars">
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
-                                <i class="fa-solid fa-star text-green"></i>
+                            <h4>Beza</h4>
+                            <p>3rd Year</p>
+                            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">"THE MANGO JUICE TASTED FRESH AND NATURAL, NOT SUGARY LIKE OTHER PLACES. I'LL DEFINITELY COME BACK WITH FRIENDS!"</p>
+                    <p class="review-body">"THE MANGO JUICE TASTED FRESH AND NATURAL, NOT SUGARY LIKE OTHER PLACES. I'LL
+                        DEFINITELY COME BACK WITH FRIENDS!"</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-col">
                 <span class="script-font text-green logo-large">Gebeta</span>
             </div>
-            
+
             <div class="footer-col">
                 <h4>Gebeta</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#Reviews">Reviews</a></li>
-                    <li><a href="#Delivery">Delivery</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4>Get Involved</h4>
                 <p class="small-text">Submit Your Details And Get Featured On Our Platform.</p>
-                <button class="footer-btn script-font">Submit Application</button>
+                <a href="/about.html#business-sec"><button class="footer-btn script-font">Submit
+                        Application</button></a>
             </div>
 
             <div class="footer-col social-col">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a> <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-telegram"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
@@ -274,4 +296,5 @@
     </footer>
 
 </body>
+
 </html>

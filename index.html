@@ -1,182 +1,203 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gebeta review-home</title>
-   <link rel="stylesheet" href="assets/css/pages/home.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Gebeta Review - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-   
-                      <!-- Navigation Menu -->
-    <header>
-         <!-- nav section -->
-    <section id="nav-bar">
-      <nav class="nav">
-        <!-- container div -->
-        <div class="nav-container">
-          <!-- logo -->
-          <div class="logo-div">
-            <span>Gebeta</span>
-          </div>
-          <!-- menu div -->
-          <div class="menu-div">
-            <a href="./index.html" class="menu-list">Home</a>
-            <a href="./reviews.html" class="menu-list">Reviews</a>
-            <a href="./delivery.html" class="menu-list">Delivery</a>
-            <a href="./about.html" class="menu-list">About</a>
-          </div>
 
-          <!--Hamburger Button -->
-          <!-- @todo add javascript to make it interactive -->
-          <div class="hamburger-container">
-            <button class="hamburger">
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="nav">
+        <div class="nav-container">
+            <!-- logo -->
+            <div class="logo-div">
+                <span>Gebeta</span>
+            </div>
+            <!-- menu div -->
+            <div class="menu-div">
+                <a href="./index.html" class="menu-list active">Home</a>
+                <a href="./reviews.html" class="menu-list">Reviews</a>
+                <a href="./delivery.html" class="menu-list">Delivery</a>
+                <a href="./about.html" class="menu-list">About</a>
+            </div>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger-container">
+                <button class="hamburger">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">DISCOVER THE BEST<br>EATS IN & AROUND<br>CAMPUS</h1>
+            <p class="hero-description">From hidden cafeteria gems to top-rated street spots and student-run delivery
+                startups, explore every bite your university has to offer.</p>
+            <div class="hero-buttons">
+                <a href="./reviews.html"><button class="btn btn-primary">Explore</button></a>
+                <a href="./submitReviews.html"><button class="btn btn-outline">Rate</button></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./images/hero sec image.png" alt="Delicious campus food">
+        </div>
     </section>
-    </header>
-<div class="main-content">
-                       <!-- Hero Section -->
-    <section class="discover">
-      <div class="discover-image">
-        <img src="./images/hero sec image.png" alt="Delicious campus food" class="hero-img">
-    </div>
-    <div class="discover-content">
-        <h1 class="discover-title">DISCOVER THE BEST<br>EATS IN & AROUND<br>CAMPUS</h1>
-        <p class="discover-description">From hidden cafeteria gems to top-rated street spots and <br>student-run delivery startups, explore every bite your university <br>
-             has to offer.</p>
-        <div class="discover-buttons">
-            <button class="btn-explore">Explore</button>
-            <button class="btn-rate">rate</button>
-        </div>
-    </div>
-</section>
-<hr>
-                    <!-- Features Section -->
-<section class="features">
-    <div class="features-grid">
-        <div class="feature-card">
-          <div class="card-1"><img src="./images/icon1.png" alt="image 1" class="icon-1"></div>
-          <h3>ON-CAMPUS <br> MEALS</h3>
-        <p>Discover & rate the food available right inside campus.</p>
-    </div>
-    <div class="feature-card">
-        <div class="card-2">
-            <img src="./images/icon2.png" alt="image 2" class="icon-2">
-        </div>
-        <h3>DELIVERY <br> OPTIONS</h3>
-        <p>Check delivery time, service quality, fees, and which meals are worth ordering according to student reviews.</p>
-    </div>
-    <div class="feature-card">
-        <div class="card-3"><img src="./images/icon3.png" alt="image 3" class="icon-3"></div>
-        <h3>OFF-CAMPUS RESTAURANTS</h3>
-        <p>Explore the best nearby places to eat around your campus.</p>
-    </div>
-    </div>
-</section>
-<hr>
-                <!-- Featured Businesses Section -->
-<section class="featured-businesses">
-    <h2 class="section-title">FEATURED BUSINESSES</h2>
-    <div class="businesses-grid">
-      <!-- Business 1 -->
-        <div class="business-card">
-            <div class="image-wrapper">
-                <img src="./images/featured-1.png" alt="featured-1">
-                <h3 class="overlay-title">DESTA CAFE</h3>
+
+    <hr class="divider">
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="./images/icon1.png" alt="On-Campus Meals">
+                <h3>ON-CAMPUS<br>MEALS</h3>
+                <p>Discover & rate the food available right inside campus.</p>
             </div>
-            <p class="business-review">"I ORDERED FROM DESTA <br> LAST WEEK - GOT MY <br>SANDWICH IN 10 MINUTES! <br> SUPER FAST AND FRIENDLY <br> SERVICE."</p>
-            <p class="review-author">- ANNA, 2ND YEAR</p>
-            <button class="see-more-btn">See More</button>
-        </div>
-     <!-- Business 2 -->
-        <div class="business-card">
-            <div class="image-wrapper">
-                <img src="./images/featured-2.png" alt="featured-2">
-                <h3 class="overlay-title">123FASTFOOD</h3>
+            <div class="feature-card highlight">
+                <img src="./images/icon2.png" alt="Delivery Options">
+                <h3>DELIVERY<br>OPTIONS</h3>
+                <p>Check delivery time, service quality, fees, and which meals are worth ordering according to student
+                    reviews.</p>
             </div>
-            <p class="business-review">"I ORDERED FROM DESTA <br> LAST WEEK - GOT MY <br>SANDWICH IN 10 MINUTES! <br> SUPER FAST AND FRIENDLY  <br>SERVICE."</p>
-            <p class="review-author">- ANNA, 2ND YEAR</p>
-            <button class="see-more-btn">See More</button>
-        </div>
-     <!-- Business 3 -->
-        <div class="business-card">
-            <div class="image-wrapper">
-                <img src="./images/featured-3.png" alt="featured-3">
-                <h3 class="overlay-title">CHRISTINA CAFE</h3>
+            <div class="feature-card">
+                <img src="./images/icon3.png" alt="Off-Campus Restaurants">
+                <h3>OFF-CAMPUS RESTAURANTS</h3>
+                <p>Explore the best nearby places to eat around your campus.</p>
             </div>
-            <p class="business-review">"I ORDERED FROM DESTA <br> LAST WEEK - GOT MY <br>SANDWICH IN 10 MINUTES! <br> SUPER FAST AND FRIENDLY <br> SERVICE."</p>
-            <p class="review-author">- ANNA, 2ND YEAR</p>
-            <button class="see-more-btn">See More</button>
         </div>
-     <!-- Business 4 -->
-        <div class="business-card">
-            <div class="image-wrapper">
-                <img src="./images/featured-4.png" alt="featured-4">
-                <h3 class="overlay-title">SLEEK DELIVERY</h3>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Featured Businesses Section -->
+    <section style="padding: 60px 5%;">
+        <h2 class="section-title">FEATURED BUSINESSES</h2>
+        <div class="businesses-grid">
+            <!-- Business 1 -->
+            <div class="business-card">
+                <div class="business-image-wrapper">
+                    <img src="./images/featured-1.png" alt="Desta Cafe">
+                    <h3 class="business-overlay-title">DESTA CAFE</h3>
+                </div>
+                <p class="business-review">"I ORDERED FROM DESTA LAST WEEK - GOT MY SANDWICH IN 10 MINUTES! SUPER FAST
+                    AND FRIENDLY SERVICE."</p>
+                <p class="review-author">- ANNA, 2ND YEAR</p>
+                <button class="btn btn-outline">See More</button>
             </div>
-            <p class="business-review">"I ORDERED FROM DESTA <br> LAST WEEK - GOT MY <br>SANDWICH IN 10 MINUTES! <br> SUPER FAST AND FRIENDLY <br> SERVICE."</p>
-            <p class="review-author">- ANNA, 2ND YEAR</p>
-            <button class="see-more-btn">See More</button>
-        </div>
-     <!-- Business 5 -->
-        <div class="business-card">
-            <div class="image-wrapper">
-                <img src="./images/featured-5.png" alt="featured-5">
-                <h3 class="overlay-title">DESTA CAFE</h3>
+
+            <!-- Business 2 -->
+            <div class="business-card">
+                <div class="business-image-wrapper">
+                    <img src="./images/featured-2.png" alt="123FastFood">
+                    <h3 class="business-overlay-title">123FASTFOOD</h3>
+                </div>
+                <p class="business-review">"I ORDERED FROM DESTA LAST WEEK - GOT MY SANDWICH IN 10 MINUTES! SUPER FAST
+                    AND FRIENDLY SERVICE."</p>
+                <p class="review-author">- ANNA, 2ND YEAR</p>
+                <button class="btn btn-outline">See More</button>
             </div>
-            <p class="business-review">"I ORDERED FROM DESTA <br> LAST WEEK - GOT MY <br>SANDWICH IN 10 MINUTES! <br> SUPER FAST AND FRIENDLY <br>SERVICE." </p>
-            <p class="review-author">- ANNA, 2ND YEAR</p>
-            <button class="see-more-btn">See More</button>
-        </div>
-     <!-- Business 6 -->
-        <div class="business-card">
-            <div class="image-wrapper">
-                <img src="./images/featured-1.png" alt="featured-1">
-                <h3 class="overlay-title">DESTA CAFE</h3>
+
+            <!-- Business 3 -->
+            <div class="business-card">
+                <div class="business-image-wrapper">
+                    <img src="./images/featured-3.png" alt="Christina Cafe">
+                    <h3 class="business-overlay-title">CHRISTINA CAFE</h3>
+                </div>
+                <p class="business-review">"I ORDERED FROM DESTA LAST WEEK - GOT MY SANDWICH IN 10 MINUTES! SUPER FAST
+                    AND FRIENDLY SERVICE."</p>
+                <p class="review-author">- ANNA, 2ND YEAR</p>
+                <button class="btn btn-outline">See More</button>
             </div>
-            <p class="business-review">"I ORDERED FROM DESTA <br> LAST WEEK - GOT MY <br>SANDWICH IN 10 MINUTES! <br> SUPER FAST AND FRIENDLY <br>
-                 SERVICE." </p>
-            <p class="review-author">- ANNA, 2ND YEAR</p>
-            <button class="see-more-btn">See More</button>
+
+            <!-- Business 4 -->
+            <div class="business-card">
+                <div class="business-image-wrapper">
+                    <img src="./images/featured-4.png" alt="Sleek Delivery">
+                    <h3 class="business-overlay-title">SLEEK DELIVERY</h3>
+                </div>
+                <p class="business-review">"I ORDERED FROM DESTA LAST WEEK - GOT MY SANDWICH IN 10 MINUTES! SUPER FAST
+                    AND FRIENDLY SERVICE."</p>
+                <p class="review-author">- ANNA, 2ND YEAR</p>
+                <button class="btn btn-outline">See More</button>
+            </div>
+
+            <!-- Business 5 -->
+            <div class="business-card">
+                <div class="business-image-wrapper">
+                    <img src="./images/featured-5.png" alt="Desta Cafe">
+                    <h3 class="business-overlay-title">DESTA CAFE</h3>
+                </div>
+                <p class="business-review">"I ORDERED FROM DESTA LAST WEEK - GOT MY SANDWICH IN 10 MINUTES! SUPER FAST
+                    AND FRIENDLY SERVICE."</p>
+                <p class="review-author">- ANNA, 2ND YEAR</p>
+                <button class="btn btn-outline">See More</button>
+            </div>
+
+            <!-- Business 6 -->
+            <div class="business-card">
+                <div class="business-image-wrapper">
+                    <img src="./images/featured-1.png" alt="Desta Cafe">
+                    <h3 class="business-overlay-title">DESTA CAFE</h3>
+                </div>
+                <p class="business-review">"I ORDERED FROM DESTA LAST WEEK - GOT MY SANDWICH IN 10 MINUTES! SUPER FAST
+                    AND FRIENDLY SERVICE."</p>
+                <p class="review-author">- ANNA, 2ND YEAR</p>
+                <button class="btn btn-outline">See More</button>
+            </div>
         </div>
-    </div>
-</section>
-</div>
-                 <!--Footer section-->
-<footer>
-    <div class="nav-brand">
-        <h2>Gebeta</h2>
-    </div>
-    <div class="navbar-list">
-        <h2>Gebeta</h2>
-        <ul>
-          <a href="./index.html"><li>Home</li></a>
-          <a href="./reviews.html"><li>reviews</li></a> 
-          <a href="./delivery.html"><li>delivery</li></a>
-          <a href="./about.html"><li>contact</li></a>
-        </ul>
-    </div>
-    <div class="get-involved">
-        <h2>Get Involved</h2>
-        <p>Submit your details and get <br> <br>featured on our platform.</p>
-        <button class="get-Involved-btn">Submit application</button>
-    </div>
-    <div class="icons">
-        <img src="./images/twitter.png" alt="twitter-icon">
-        <img src="./images/facebook.png" alt="face-book-icon">
-        <img src="./images/telegram.png" alt="telegram-icon">
-        <img src="./images/instagram.png" alt="instagram-icon">
-    </div>
-</footer>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <span class="script-font text-green logo-large">Gebeta</span>
+            </div>
+
+            <div class="footer-col">
+                <h4>Gebeta</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Involved</h4>
+                <p class="small-text">Submit Your Details And Get Featured On Our Platform.</p>
+                <a href="/about.html#business-sec"><button class="footer-btn script-font">Submit
+                        Application</button></a>
+            </div>
+
+            <div class="footer-col social-col">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 <span class="script-font text-green">Gebeta</span> — Built by Students, for Students.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
