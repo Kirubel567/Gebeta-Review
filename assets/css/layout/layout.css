@@ -1,0 +1,25 @@
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-green { color: var(--accent-green); }
+.script-font { font-family: var(--font-script); }
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem; /* Unified size */
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--text-white);
+    margin: 40px 0;
+    opacity: 0.2;
+}
