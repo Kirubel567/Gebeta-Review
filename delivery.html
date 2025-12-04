@@ -1,415 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delivery</title>
-    <link rel="stylesheet" href="./assets/css/pages/delivery.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-   <!-- nav section -->
-    <section id="nav-bar">
-      <nav class="nav">
-        <!-- container div -->
-        <div class="nav-container">
-          <!-- logo -->
-          <div class="logo-div">
-            <span>Gebeta</span>
-          </div>
-          <!-- menu div -->
-          <div class="menu-div">
-            <a href="./index.html" class="menu-list">Home</a>
-            <a href="./reviews.html" class="menu-list">Reviews</a>
-            <a href="./delivery.html" class="menu-list">Delivery</a>
-            <a href="./about.html" class="menu-list">About</a>
-          </div>
 
-          <!--Hamburger Button -->
-          <!-- @todo add javascript to make it interactive -->
-          <div class="hamburger-container">
-            <button class="hamburger">
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation Menu -->
+  <nav class="nav">
+    <div class="nav-container">
+      <!-- logo -->
+      <div class="logo-div">
+        <span>Gebeta</span>
+      </div>
+      <!-- menu div -->
+      <div class="menu-div">
+        <a href="./index.html" class="menu-list">Home</a>
+        <a href="./reviews.html" class="menu-list">Reviews</a>
+        <a href="./delivery.html" class="menu-list active">Delivery</a>
+        <a href="./about.html" class="menu-list">About</a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger-container">
+        <button class="hamburger">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- search button section-->
+  <div class="container" style="margin-top: 40px;">
+    <div class="filter-bar">
+      <div class="filter-btn active">Fast Deliver</div>
+      <div class="filter-btn">Low Delivery Fee</div>
+      <div class="filter-btn">Top Rated</div>
+      <div class="search-icon-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h1 class="section-title" style="text-align: center;">Delivery</h1>
+
+  <!-- hero section -->
+  <section class="hero-section">
+    <div class="hero-image">
+      <img src="./assets/images/delivery/deliveryCar.png" alt="Delivery Car" />
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title" style="font-size: 2.5rem;">Delivery Options Around Campus</h1>
+      <p class="hero-description">
+        Discover every delivery service available around campus - rated,
+        reviewed, and compared for you.
+      </p>
+      <!-- button container -->
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Order</button>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- top section -->
+  <section class="container" style="padding: 40px 20px;">
+    <h1 class="section-title">Top five deliveries</h1>
+    <div class="businesses-grid">
+      <!-- card container -->
+      <div class="business-card" style="padding: 30px;">
+        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
+        <!-- star container -->
+        <div class="rating-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <span>4.5 (234 Reviews)</span>
+        </div>
+
+        <!-- location container -->
+        <div class="card-details">
+          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+        </div>
+
+        <!-- button container-->
+        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
+      </div>
+
+      <!-- card container -->
+      <div class="business-card" style="padding: 30px;">
+        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
+        <!-- star container -->
+        <div class="rating-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <span>4.5 (234 Reviews)</span>
+        </div>
+
+        <!-- location container -->
+        <div class="card-details">
+          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+        </div>
+
+        <!-- button container-->
+        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
+      </div>
+
+      <!-- card container -->
+      <div class="business-card" style="padding: 30px;">
+        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
+        <!-- star container -->
+        <div class="rating-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <span>4.5 (234 Reviews)</span>
+        </div>
+
+        <!-- location container -->
+        <div class="card-details">
+          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+        </div>
+
+        <!-- button container-->
+        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Reviews section -->
+  <section class="container" style="padding: 40px 20px;">
+    <h1 class="section-title">Reviews</h1>
+    <!-- grid container -->
+    <div class="reviews-list">
+      <!-- review container -->
+      <div class="review-item">
+        <h2 style="font-family: var(--font-heading); margin-bottom: 15px;">Shega delivery</h2>
+        <!-- image and name -->
+        <div class="review-header">
+          <!-- img -->
+          <img class="reviewer-img" src="./assets/images/delivery/hana.png" alt="">
+          <!-- content container -->
+          <div class="reviewer-info">
+            <h4>Selam tadesse</h4>
+            <p>6k, AAu</p>
+            <!-- star container -->
+            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
           </div>
         </div>
-      </nav>
-    </section>
-
-    <!-- search button section-->
-    <section id="search-button">
-      <div class="btn-container">
-        <!-- search button -->
-        <div class="search-container">
-          <a href="#" class="first-btn btn">fast deliver</a>
-          <a href="#" class="middle-btn btn">Low Delivery Fee</a>
-          <a href="#" class="last-btn btn">
-            <span>Top Rated</span>
-            <!-- search icon -->
-            <div class="search-icon">
-              <img
-                src="./assets/images/icons/material-symbols_search.svg"
-                alt="search icon"
-              />
-            </div>
-          </a>
-        </div>
+        <p class="review-body">“Honestly the fastest around campus. I order between classes all the time — they usually
+          show up in under 20 minutes. A bit pricier, but super reliable.”</p>
       </div>
-    </section>
-    <!-- break line -->
-    <div class="break-line"></div>
-    <h1 class="heading-one header">Delivery</h1>
-    <!-- hero section -->
-    <section id="hero">
-      <div class="hero-container">
-        <!-- image container -->
-        <img src="./assets/images/delivery/deliveryCar.png" alt="" />
-        <!-- content container -->
-        <div class="content-container">
-          <h1 class="heading-one">Delivery Options Around Campus</h1>
-          <p>
-            Discover every delivery service available around campus - rated,
-            reviewed, and compared for you.
-          </p>
-          <!-- button container -->
-          <div class="btn-container">
-            <button class="post-btn">Post</button>
+
+      <!-- review container -->
+      <div class="review-item">
+        <h2 style="font-family: var(--font-heading); margin-bottom: 15px;">Shega delivery</h2>
+        <!-- image and name -->
+        <div class="review-header">
+          <!-- img -->
+          <img class="reviewer-img" src="./assets/images/delivery/hana.png" alt="">
+          <!-- content container -->
+          <div class="reviewer-info">
+            <h4>Selam tadesse</h4>
+            <p>6k, AAu</p>
+            <!-- star container -->
+            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
           </div>
         </div>
+        <p class="review-body">“Honestly the fastest around campus. I order between classes all the time — they usually
+          show up in under 20 minutes. A bit pricier, but super reliable.”</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- break line -->
-    <div class="break-line"></div>
-    <!-- top section -->
-    <section id="top-5">
-    <h1 class="heading-one">Top five deliveries</h1>
-      <div class="top-five-container">
-        <!-- card container -->
-        <div class="card-container">
-            <h2>Shega delivery</h2>
-            <!-- star container -->
-            <div class="star-container">
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/half-star.svg" alt="" />
-            </div>
-            <p class="rating">4.5 (234 Reviews)</p>
-            <!-- location container -->
-            <div class="location-container">
-              <img src="./assets/images/icons/location.svg" alt="" />
-              <p>5k, 6k, 4k</p>
-            </div>
-            <!-- information container -->
-            <div class="more-info">
-              <!-- left info-->
-              <div class="left-info">
-                <img src="./assets/images/icons/group.svg" alt="" />
-                <p>fast delivery</p>
-              </div>
-              <!-- right info -->
-              <div class="right-info">
-                <img src="./assets/images/icons/time.svg" alt="" />
-                <p>order until 6pm</p>
-              </div>
-            </div>
-            <!-- button container-->
-            <div class="btn-container">
-            <button class="post-btn">Explore</button>
-            </div>
-        </div>
-        <!-- card container -->
-        <div class="card-container">
-            <h2>Shega delivery</h2>
-            <!-- star container -->
-            <div class="star-container">
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/half-star.svg" alt="" />
-            </div>
-            <p class="rating">4.5 (234 Reviews)</p>
-            <!-- location container -->
-            <div class="location-container">
-              <img src="./assets/images/icons/location.svg" alt="" />
-              <p>5k, 6k, 4k</p>
-            </div>
-            <!-- information container -->
-            <div class="more-info">
-              <!-- left info-->
-              <div class="left-info">
-                <img src="./assets/images/icons/group.svg" alt="" />
-                <p>fast delivery</p>
-              </div>
-              <!-- right info -->
-              <div class="right-info">
-                <img src="./assets/images/icons/time.svg" alt="" />
-                <p>order until 6pm</p>
-              </div>
-            </div>
-            <!-- button container-->
-            <div class="btn-container">
-            <button class="post-btn">Explore</button>
-            </div>
-        </div>
-        <!-- card container -->
-        <div class="card-container">
-            <h2>Shega delivery</h2>
-            <!-- star container -->
-            <div class="star-container">
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/half-star.svg" alt="" />
-            </div>
-            <p class="rating">4.5 (234 Reviews)</p>
-            <!-- location container -->
-            <div class="location-container">
-              <img src="./assets/images/icons/location.svg" alt="" />
-              <p>5k, 6k, 4k</p>
-            </div>
-            <!-- information container -->
-            <div class="more-info">
-              <!-- left info-->
-              <div class="left-info">
-                <img src="./assets/images/icons/group.svg" alt="" />
-                <p>fast delivery</p>
-              </div>
-              <!-- right info -->
-              <div class="right-info">
-                <img src="./assets/images/icons/time.svg" alt="" />
-                <p>order until 6pm</p>
-              </div>
-            </div>
-            <!-- button container-->
-            <div class="btn-container">
-            <button class="post-btn">Explore</button>
-            </div>
-        </div>
-        <!-- card container -->
-        <div class="card-container">
-            <h2>Shega delivery</h2>
-            <!-- star container -->
-            <div class="star-container">
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/half-star.svg" alt="" />
-            </div>
-            <p class="rating">4.5 (234 Reviews)</p>
-            <!-- location container -->
-            <div class="location-container">
-              <img src="./assets/images/icons/location.svg" alt="" />
-              <p>5k, 6k, 4k</p>
-            </div>
-            <!-- information container -->
-            <div class="more-info">
-              <!-- left info-->
-              <div class="left-info">
-                <img src="./assets/images/icons/group.svg" alt="" />
-                <p>fast delivery</p>
-              </div>
-              <!-- right info -->
-              <div class="right-info">
-                <img src="./assets/images/icons/time.svg" alt="" />
-                <p>order until 6pm</p>
-              </div>
-            </div>
-            <!-- button container-->
-            <div class="btn-container">
-            <button class="post-btn">Explore</button>
-            </div>
-        </div>
-        <!-- card container -->
-        <div class="card-container">
-            <h2>Shega delivery</h2>
-            <!-- star container -->
-            <div class="star-container">
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/star.svg" alt="" />
-              <img src="./assets/images/icons/half-star.svg" alt="" />
-            </div>
-            <p class="rating">4.5 (234 Reviews)</p>
-            <!-- location container -->
-            <div class="location-container">
-              <img src="./assets/images/icons/location.svg" alt="" />
-              <p>5k, 6k, 4k</p>
-            </div>
-            <!-- information container -->
-            <div class="more-info">
-              <!-- left info-->
-              <div class="left-info">
-                <img src="./assets/images/icons/group.svg" alt="" />
-                <p>fast delivery</p>
-              </div>
-              <!-- right info -->
-              <div class="right-info">
-                <img src="./assets/images/icons/time.svg" alt="" />
-                <p>order until 6pm</p>
-              </div>
-            </div>
-            <!-- button container-->
-            <div class="btn-container">
-            <button class="post-btn">Explore</button>
-            </div>
-        </div>
-        </div>
-        
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <span class="script-font text-green logo-large">Gebeta</span>
       </div>
-    </section>
-    <!-- break line -->
-    <div class="break-line"></div>
-    <!-- Reviews section -->
-    <section id="review">
-        <h1 class="heading-one">Reviews</h1>
-        <!-- grid container -->
-         <div class="reviews">
-            <!-- review container -->
-             <div class="review-card">
-                <h2 class="delivery-name">Shega delivery</h2>
-                <!-- image and name -->
-                 <div class="image-and-name">
-                    <!-- img -->
-                     <img class="hana" src="./assets/images/delivery/hana.png" alt="">
-                     <!-- content container -->
-                    <div class="name">
-                        <h3>Selam tadesse</h3>
-                        <p>6k, AAu</p>
-                        <!-- star container -->
-                         <div class="star-container-review">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                         </div>
-                    </div>
-                  </div>
-                  <p>“Honestly the fastest around campus. I order between classes all the time — they usually show up in under 20 minutes. A bit pricier, but super reliable.”</p>
-             </div>
-             <!-- review container -->
-             <div class="review-card">
-                <h2 class="delivery-name">Shega delivery</h2>
-                <!-- image and name -->
-                 <div class="image-and-name">
-                    <!-- img -->
-                     <img class="hana" src="./assets/images/delivery/hana.png" alt="">
-                     <!-- content container -->
-                    <div class="name">
-                        <h3>Selam tadesse</h3>
-                        <p>6k, AAu</p>
-                        <!-- star container -->
-                         <div class="star-container-review">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                         </div>
-                    </div>
-                  </div>
-                  <p>“Honestly the fastest around campus. I order between classes all the time — they usually show up in under 20 minutes. A bit pricier, but super reliable.”</p>
-             </div>
-             <!-- review container  -->
-             <div class="review-card">
-                <h2 class="delivery-name">Shega delivery</h2>
-                <!-- image and name -->
-                 <div class="image-and-name">
-                    <!-- img -->
-                     <img class="hana" src="./assets/images/delivery/hana.png" alt="">
-                     <!-- content container -->
-                    <div class="name">
-                        <h3>Selam tadesse</h3>
-                        <p>6k, AAu</p>
-                        <!-- star container -->
-                         <div class="star-container-review">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                         </div>
-                    </div>
-                  </div>
-                  <p>“Honestly the fastest around campus. I order between classes all the time — they usually show up in under 20 minutes. A bit pricier, but super reliable.”</p>
-             </div>
-             <!-- review container --> 
-             <div class="review-card">
-                <h2 class="delivery-name">Shega delivery</h2>
-                <!-- image and name -->
-                 <div class="image-and-name">
-                    <!-- img -->
-                     <img class="hana" src="./assets/images/delivery/hana.png" alt="">
-                     <!-- content container -->
-                    <div class="name">
-                        <h3>Selam tadesse</h3>
-                        <p>6k, AAu</p>
-                        <!-- star container -->
-                         <div class="star-container-review">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                            <img src="./assets/images/icons/star.svg" alt="">
-                         </div>
-                    </div>
-                  </div>
-                  <p>“Honestly the fastest around campus. I order between classes all the time — they usually show up in under 20 minutes. A bit pricier, but super reliable.”</p>
-             </div>
-         </div>
-    </section>
-    <!-- footer section -->
-     <section id="footer">
-      <footer>
-        <!-- footer container -->
-         <div class="footer-container">
-          <h1 class="first-heading">Gebeta</h1>
-          <!-- list one container -->
-           <div class="menu">
-            <h1>Gebeta</h1>
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">reviews</a></li>
-              <li><a href="#">delivery</a></li>
-              <li><a href="#">about</a></li>
-            </ul>
-           </div>
-           <!-- get involved -->
-            <div class="get-involved">
-              <h1>Get involved</h1>
-              <p>Submit your details and get featured on our platform.</p>
-              <!-- button container-->
-              <div class="btn-container-">
-                <button class="submit">Submit application</button>
-              </div>
-            </div>
-            <!-- socials container -->
-             <div class="socials">
-              <a href="#"><img src="./assets/images/icons/x.svg" alt=""></a>
-              <a href="#"><img src="./assets/images/icons/facebook.svg" alt=""></a>
-              <a href="#"><img src="./assets/images/icons/telegram.svg" alt=""></a>
-              <a href="#"><img src="./assets/images/icons/instagram.svg" alt=""></a>
-             </div>
-         </div>
-         <p class="copyright">© 2025 <span>Gebeta</span> — Built by Students, for Students.</p>
-      </footer>
-     </section>
+
+      <div class="footer-col">
+        <h4>Gebeta</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <p class="small-text">Submit Your Details And Get Featured On Our Platform.</p>
+        <a href="/about.html#business-sec"><button class="footer-btn script-font">Submit Application</button></a>
+      </div>
+
+      <div class="footer-col social-col">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 <span class="script-font text-green">Gebeta</span> — Built by Students, for Students.</p>
+    </div>
+  </footer>
+
 </body>
-</html>
 
-  </body>
 </html>

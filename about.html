@@ -1,124 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gebeta Review - About Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
 
-     <!-- nav section -->
-    <section id="nav-bar">
-      <nav class="nav">
-        <!-- container div -->
+    <!-- Navigation Menu -->
+    <nav class="nav">
         <div class="nav-container">
-          <!-- logo -->
-          <div class="logo-div">
-            <span>Gebeta</span>
-          </div>
-          <!-- menu div -->
-          <div class="menu-div">
-            <a href="./index.html" class="menu-list">Home</a>
-            <a href="./reviews.html" class="menu-list">Reviews</a>
-            <a href="./delivery.html" class="menu-list">Delivery</a>
-            <a href="./about.html" class="menu-list">About</a>
-          </div>
+            <!-- logo -->
+            <div class="logo-div">
+                <span>Gebeta</span>
+            </div>
+            <!-- menu div -->
+            <div class="menu-div">
+                <a href="./index.html" class="menu-list">Home</a>
+                <a href="./reviews.html" class="menu-list">Reviews</a>
+                <a href="./delivery.html" class="menu-list">Delivery</a>
+                <a href="./about.html" class="menu-list active">About</a>
+            </div>
 
-          <!--Hamburger Button -->
-          <!-- @todo add javascript to make it interactive -->
-          <div class="hamburger-container">
-            <button class="hamburger">
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
+            <!-- Hamburger Button -->
+            <div class="hamburger-container">
+                <button class="hamburger">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
         </div>
-      </nav>
-    </section>
+    </nav>
 
     <main>
         <section class="about-section">
-            <div class="about-content">
+            <div class="about-text">
                 <h1>ABOUT <span class="script-font text-green">Gebeta</span><br>REVIEW</h1>
-                
+
                 <p>
-                    <span class="script-font text-green">Gebeta</span> is a student-powered food discovery and review platform built to help university students find the best meals on and around campus.
+                    <span class="script-font text-green">Gebeta</span> is a student-powered food discovery and review
+                    platform built to help university students find the best meals on and around campus.
                 </p>
                 <p>
-                    We make it easy to explore cafeterias, nearby restaurants, and student-run delivery services — all in one organized hub.
+                    We make it easy to explore cafeterias, nearby restaurants, and student-run delivery services — all
+                    in one organized hub.
                 </p>
             </div>
 
             <div class="about-gallery">
-                <div class="gallery-item off-campus" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600');">
-                    <span>OFF-CAMPUS</span>
+                <div class="gallery-item large"
+                    style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600');">
+                    <span class="gallery-label">OFF-CAMPUS</span>
                 </div>
-                <div class="gallery-item on-campus" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=300');">
-                    <span>ON-CAMPUS</span>
+                <div class="gallery-item"
+                    style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=300');">
+                    <span class="gallery-label">ON-CAMPUS</span>
                 </div>
-                <div class="gallery-item delivery" style="background-image: url('https://images.unsplash.com/photo-1616035905688-6933973c2463?auto=format&fit=crop&q=80&w=800');">
-                    <span>DELIVERY</span>
+                <div class="gallery-item wide"
+                    style="background-image: url('https://images.unsplash.com/photo-1616035905688-6933973c2463?auto=format&fit=crop&q=80&w=800');">
+                    <span class="gallery-label">DELIVERY</span>
                 </div>
             </div>
         </section>
 
         <hr class="divider">
 
-        <section class="business-section" id="business-sec">
-            <h2 class="section-title">LIST YOUR BUSINESS</h2>
-            
+        <section class="form-section" id="business-sec">
+            <h2 class="section-title text-center">LIST YOUR BUSINESS</h2>
+
             <div class="form-card">
                 <form>
                     <div class="form-group">
                         <label>BUSINESS NAME</label>
                         <input type="text" placeholder="" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>LOCATION</label>
                         <input type="text" placeholder="" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>DESCRIPTION</label>
-                        <textarea rows="5" ></textarea>
+                        <textarea rows="5"></textarea>
                     </div>
 
-                    <button type="submit" class="submit-btn script-font">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-col">
                 <span class="script-font text-green logo-large">Gebeta</span>
             </div>
-            
+
             <div class="footer-col">
                 <h4>Gebeta</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#Reviews">Reviews</a></li>
-                    <li><a href="#Delivery">Delivery</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4>Get Involved</h4>
                 <p class="small-text">Submit Your Details And Get Featured On Our Platform.</p>
-                <a href="#business-sec"><button class="footer-btn script-font">Submit Application</button></a>
+                <a href="/about.html#business-sec"><button class="footer-btn script-font">Submit
+                        Application</button></a>
             </div>
 
             <div class="footer-col social-col">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a> <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-telegram"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
@@ -129,4 +138,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -1,59 +1,89 @@
-/* --- Footer --- */
 footer {
     background-color: var(--secondary-bg);
     padding: 60px 5% 20px 5%;
-    font-size: 0.9rem;
+    margin-top: 60px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 40px;
+    max-width: var(--container-width);
+    margin: 0 auto 40px auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer-col h4 {
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: var(--text-white);
+    font-family: var(--font-heading);
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: var(--text-grey);
+    font-size: 0.9rem;
+}
+
+.footer-col ul li a:hover {
+    color: var(--accent-green);
 }
 
 .logo-large {
-     font-size: 2rem;
-}
-
-.footer-col ul li { 
-    margin-bottom: 10px; 
-}
-.footer-col ul li a { 
-    color: var(--text-grey); 
-    text-transform: lowercase; 
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .small-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-grey);
-    margin-bottom: 15px;
-    max-width: 200px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .footer-btn {
     background-color: var(--accent-green);
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
+    color: var(--secondary-bg);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-family: var(--font-script);
     font-size: 1rem;
+    transition: transform 0.3s;
 }
 
-.social-col { display: flex; gap: 15px; align-items: flex-start; }
-.social-col i { font-size: 1.5rem; }
+.footer-btn:hover {
+    transform: scale(1.05);
+}
+
+.social-col {
+    display: flex;
+    gap: 15px;
+}
+
+.social-col a i {
+    font-size: 1.5rem;
+    color: var(--text-grey);
+    transition: color 0.3s;
+}
+
+.social-col a:hover i {
+    color: var(--accent-green);
+}
 
 .copyright {
     text-align: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 20px;
-    color: #666;
-    font-size: 0.75rem;
+    color: var(--text-grey);
+    font-size: 0.8rem;
 }
