@@ -7,11 +7,12 @@
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
+    width: 250px;
 }
 
 .btn-primary {
     background-color: var(--accent-green);
-    color: var(--secondary-bg); /* Dark text on green for contrast */
+    color: var(--text-white); 
     border: 2px solid var(--accent-green);
 }
 
