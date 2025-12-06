@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 768px) {
+    .about-gallery{
+        display: none; 
+    }
     .section-title {
         font-size: 2rem;
     }
