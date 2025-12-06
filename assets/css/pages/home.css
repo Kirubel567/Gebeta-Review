@@ -47,7 +47,6 @@
 }
 
 /* Features Section */
-/* ========================== FEATURES SECTION ========================== */
 .features-section {
     padding: 40px; 
     margin: 40px auto;
@@ -106,7 +105,7 @@
     font-family: var(--font-primary);
 }
 
-/* ========================== BUSINESS GRID ========================== */
+/* BUSINESS GRID */
 .featured-businesses {
     padding: 60px 5%;
 }
@@ -123,7 +122,7 @@
     grid-template-columns: repeat(4, 270px);
     grid-auto-rows: 387px; 
     gap: 20px;
-    justify-content: center;
+    justify-content: start;
     margin: 0 auto; 
     padding: 0 40px; 
     max-width: var(--container-width);
@@ -133,6 +132,9 @@
     grid-column: 2 / 3;
 }
 
+.businesses-grid > .special{
+    grid-column: 2/1;
+}
 .businesses-grid > :nth-child(6) {
     grid-column: 3 / 4;
 }
