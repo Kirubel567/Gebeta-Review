@@ -1,303 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Delivery</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" href="./images/Rectangle 59.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Delivery</title>
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="icon" href="./images/Rectangle 59.png">
-</head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="nav">
+      <div class="nav-container">
+        <!-- logo -->
+        <div class="logo-div">
+          <span>Gebeta</span>
+        </div>
+        <!-- menu div -->
+        <div class="menu-div">
+          <a href="./index.html" class="menu-list">Home</a>
+          <a href="./reviews.html" class="menu-list">Reviews</a>
+          <a href="./delivery.html" class="menu-list active">Delivery</a>
+          <a href="./about.html" class="menu-list">About</a>
+        </div>
 
-<body>
-
-  <!-- Navigation Menu -->
-  <nav class="nav">
-    <div class="nav-container">
-      <!-- logo -->
-      <div class="logo-div">
-        <span>Gebeta</span>
+        <!-- Hamburger Button -->
+        <div class="hamburger-container">
+          <button class="hamburger">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
       </div>
-      <!-- menu div -->
-      <div class="menu-div">
-        <a href="./index.html" class="menu-list">Home</a>
-        <a href="./reviews.html" class="menu-list">Reviews</a>
-        <a href="./delivery.html" class="menu-list active">Delivery</a>
-        <a href="./about.html" class="menu-list">About</a>
-      </div>
+    </nav>
 
-      <!-- Hamburger Button -->
-      <div class="hamburger-container">
-        <button class="hamburger">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- search button section-->
-  <div class="container" style="margin-top: 40px;">
-    <div class="filter-bar">
-      <div class="filter-btn active">Fast Deliver</div>
-      <div class="filter-btn">Low Delivery Fee</div>
-      <div class="filter-btn">Top Rated</div>
-      <div class="search-icon-btn">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </div>
-  </div>
-
-  <hr class="divider">
-
-  <h1 class="section-title" style="text-align: center;">Delivery</h1>
-
-  <!-- hero section -->
-  <section class="hero-section">
-    <div class="hero-image">
-      <img src="./assets/images/delivery/deliveryCar.png" alt="Delivery Car" />
-    </div>
-    <div class="hero-content">
-      <h1 class="hero-title" style="font-size: 2.5rem;">Delivery Options Around Campus</h1>
-      <p class="hero-description">
-        Discover every delivery service available around campus - rated,
-        reviewed, and compared for you.
-      </p>
-      <!-- button container -->
-      <div class="hero-buttons">
-        <button class="btn btn-primary">Order</button>
+    <!-- search button section-->
+    <div class="container" style="margin-top: 40px">
+      <div class="filter-bar">
+        <div class="filter-btn active">Fast Deliver</div>
+        <div class="filter-btn">Low Delivery Fee</div>
+        <div class="filter-btn">Top Rated</div>
+        <div class="search-icon-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
     </div>
-  </section>
 
-  <hr class="divider">
+    <hr class="divider" />
 
-  <!-- top section -->
-  <section class="container" style="padding: 40px 20px;">
-    <h1 class="section-title">Top five deliveries</h1>
-    <div class="businesses-grid">
-      <!-- card container -->
-      <div class="business-card" style="padding: 30px;">
-        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
-        <!-- star container -->
-        <div class="rating-stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-          <span>4.5 (234 Reviews)</span>
-        </div>
+    <h1 class="section-title" style="text-align: center">Delivery</h1>
 
-        <!-- location container -->
-        <div class="card-details">
-          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
-          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
-          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
-        </div>
-
-        <!-- button container-->
-        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="hero-image">
+        <img
+          src="./assets/images/delivery/deliveryCar.png"
+          alt="Delivery Car"
+        />
       </div>
-
-      <!-- card container -->
-      <div class="business-card" style="padding: 30px;">
-        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
-        <!-- star container -->
-        <div class="rating-stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-          <span>4.5 (234 Reviews)</span>
+      <div class="hero-content">
+        <h1 class="hero-title" style="font-size: 2.5rem">
+          Delivery Options Around Campus
+        </h1>
+        <p class="hero-description">
+          Discover every delivery service available around campus - rated,
+          reviewed, and compared for you.
+        </p>
+        <!-- button container -->
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Order</button>
         </div>
-
-        <!-- location container -->
-        <div class="card-details">
-          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
-          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
-          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
-        </div>
-
-        <!-- button container-->
-        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
       </div>
+    </section>
 
-      <!-- card container -->
-      <div class="business-card" style="padding: 30px;">
-        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
-        <!-- star container -->
-        <div class="rating-stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-          <span>4.5 (234 Reviews)</span>
+    <hr class="divider" />
+
+    <!-- top section -->
+    <section class="container" style="padding: 40px 20px">
+      <h1 class="section-title">Top five deliveries</h1>
+      <div class="businesses-grid">
+        <!-- card container -->
+        <div class="business-card" style="padding: 30px">
+          <h2 style="font-family: var(--font-heading); margin-bottom: 20px">
+            Shega delivery
+          </h2>
+          <!-- star container -->
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.5 (234 Reviews)</span>
+          </div>
+
+          <!-- location container -->
+          <div class="card-details">
+            <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+            <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+            <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+          </div>
+
+          <!-- button container-->
+          <button class="btn btn-outline" style="margin-top: 20px">
+            Explore
+          </button>
         </div>
 
-        <!-- location container -->
-        <div class="card-details">
-          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
-          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
-          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+        <!-- card container -->
+        <div class="business-card" style="padding: 30px">
+          <h2 style="font-family: var(--font-heading); margin-bottom: 20px">
+            Shega delivery
+          </h2>
+          <!-- star container -->
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.5 (234 Reviews)</span>
+          </div>
+
+          <!-- location container -->
+          <div class="card-details">
+            <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+            <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+            <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+          </div>
+
+          <!-- button container-->
+          <button class="btn btn-outline" style="margin-top: 20px">
+            Explore
+          </button>
         </div>
 
-        <!-- button container-->
-        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
+        <!-- card container -->
+        <div class="business-card" style="padding: 30px">
+          <h2 style="font-family: var(--font-heading); margin-bottom: 20px">
+            Shega delivery
+          </h2>
+          <!-- star container -->
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.5 (234 Reviews)</span>
+          </div>
+
+          <!-- location container -->
+          <div class="card-details">
+            <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+            <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+            <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+          </div>
+
+          <!-- button container-->
+          <button class="btn btn-outline" style="margin-top: 20px">
+            Explore
+          </button>
+        </div>
+        <!-- card container -->
+        <div class="business-card" style="padding: 30px">
+          <h2 style="font-family: var(--font-heading); margin-bottom: 20px">
+            Shega delivery
+          </h2>
+          <!-- star container -->
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.5 (234 Reviews)</span>
+          </div>
+
+          <!-- location container -->
+          <div class="card-details">
+            <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+            <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+            <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+          </div>
+
+          <!-- button container-->
+          <button class="btn btn-outline" style="margin-top: 20px">
+            Explore
+          </button>
+        </div>
+        <!-- card container -->
+        <div class="business-card special" style="padding: 30px">
+          <h2 style="font-family: var(--font-heading); margin-bottom: 20px">
+            Shega delivery
+          </h2>
+          <!-- star container -->
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.5 (234 Reviews)</span>
+          </div>
+
+          <!-- location container -->
+          <div class="card-details">
+            <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
+            <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
+            <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
+          </div>
+
+          <!-- button container-->
+          <button class="btn btn-outline" style="margin-top: 20px">
+            Explore
+          </button>
+        </div>
       </div>
-      <!-- card container -->
-      <div class="business-card" style="padding: 30px;">
-        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
-        <!-- star container -->
-        <div class="rating-stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-          <span>4.5 (234 Reviews)</span>
-        </div>
+    </section>
 
-        <!-- location container -->
-        <div class="card-details">
-          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
-          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
-          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
-        </div>
+    <hr class="divider" />
 
-        <!-- button container-->
-        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
-      </div>
-      <!-- card container -->
-      <div class="business-card special" style="padding: 30px;">
-        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Shega delivery</h2>
-        <!-- star container -->
-        <div class="rating-stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-          <span>4.5 (234 Reviews)</span>
-        </div>
-
-        <!-- location container -->
-        <div class="card-details">
-          <div><i class="fa-solid fa-location-dot"></i> 5k, 6k, 4k</div>
-          <div><i class="fa-solid fa-bolt"></i> Fast Delivery</div>
-          <div><i class="fa-solid fa-clock"></i> Order until 6pm</div>
-        </div>
-
-        <!-- button container-->
-        <button class="btn btn-outline" style="margin-top: 20px;">Explore</button>
-      </div>
-
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- Reviews section -->
-  <section class="container" style="padding: 40px 20px;">
-    <h1 class="section-title">Reviews</h1>
-    <!-- grid container -->
-    <div class="reviews-list">
-      <!-- review container -->
-      <div class="review-item">
-        <h2 style="font-family: var(--font-heading); margin-bottom: 15px;">Shega delivery</h2>
-        <!-- image and name -->
-        <div class="review-header">
-          <!-- img -->
-          <img class="reviewer-img" src="./assets/images/delivery/hana.png" alt="">
-          <!-- content container -->
-          <div class="reviewer-info">
-            <h4>Selam tadesse</h4>
-            <p>6k, AAu</p>
-            <!-- star container -->
-            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+    <!-- Reviews section -->
+    <section class="container" style="padding: 40px 20px">
+      <h1 class="section-title">Reviews</h1>
+      <!-- grid container -->
+      <div class="reviews-list">
+        <!-- review container -->
+        <div class="review-item">
+          <h2 style="font-family: var(--font-heading); margin-bottom: 15px">
+            Shega delivery
+          </h2>
+          <!-- image and name -->
+          <div class="review-header">
+            <!-- img -->
+            <img
+              class="reviewer-img"
+              src="./assets/images/delivery/hana.png"
+              alt=""
+            />
+            <!-- content container -->
+            <div class="reviewer-info">
+              <h4>Selam tadesse</h4>
+              <p>6k, AAu</p>
+              <!-- star container -->
+              <div class="rating-stars" style="font-size: 0.8rem; margin: 0">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
+          <p class="review-body">
+            “Honestly the fastest around campus. I order between classes all the
+            time — they usually show up in under 20 minutes. A bit pricier, but
+            super reliable.”
+          </p>
         </div>
-        <p class="review-body">“Honestly the fastest around campus. I order between classes all the time — they usually
-          show up in under 20 minutes. A bit pricier, but super reliable.”</p>
-      </div>
 
-      <!-- review container -->
-      <div class="review-item">
-        <h2 style="font-family: var(--font-heading); margin-bottom: 15px;">Shega delivery</h2>
-        <!-- image and name -->
-        <div class="review-header">
-          <!-- img -->
-          <img class="reviewer-img" src="./assets/images/delivery/hana.png" alt="">
-          <!-- content container -->
-          <div class="reviewer-info">
-            <h4>Selam tadesse</h4>
-            <p>6k, AAu</p>
-            <!-- star container -->
-            <div class="rating-stars" style="font-size: 0.8rem; margin: 0;">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+        <!-- review container -->
+        <div class="review-item">
+          <h2 style="font-family: var(--font-heading); margin-bottom: 15px">
+            Shega delivery
+          </h2>
+          <!-- image and name -->
+          <div class="review-header">
+            <!-- img -->
+            <img
+              class="reviewer-img"
+              src="./assets/images/delivery/hana.png"
+              alt=""
+            />
+            <!-- content container -->
+            <div class="reviewer-info">
+              <h4>Selam tadesse</h4>
+              <p>6k, AAu</p>
+              <!-- star container -->
+              <div class="rating-stars" style="font-size: 0.8rem; margin: 0">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
+          <p class="review-body">
+            “Honestly the fastest around campus. I order between classes all the
+            time — they usually show up in under 20 minutes. A bit pricier, but
+            super reliable.”
+          </p>
         </div>
-        <p class="review-body">“Honestly the fastest around campus. I order between classes all the time — they usually
-          show up in under 20 minutes. A bit pricier, but super reliable.”</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-col">
-        <span class="script-font text-green logo-large">Gebeta</span>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+          <span class="script-font text-green logo-large">Gebeta</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gebeta</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <p class="small-text">
+            Submit Your Details And Get Featured On Our Platform.
+          </p>
+          <a href="/about.html#business-sec"
+            ><button class="footer-btn script-font">
+              Submit Application
+            </button></a
+          >
+        </div>
+
+        <div class="footer-col social-col">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
-
-      <div class="footer-col">
-        <h4>Gebeta</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="delivery.html">Delivery</a></li>
-        </ul>
+      <div class="copyright">
+        <p>
+          &copy; 2025 <span class="script-font text-green">Gebeta</span> — Built
+          by Students, for Students.
+        </p>
       </div>
-
-      <div class="footer-col">
-        <h4>Get Involved</h4>
-        <p class="small-text">Submit Your Details And Get Featured On Our Platform.</p>
-        <a href="/about.html#business-sec"><button class="footer-btn script-font">Submit Application</button></a>
-      </div>
-
-      <div class="footer-col social-col">
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2025 <span class="script-font text-green">Gebeta</span> — Built by Students, for Students.</p>
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>
