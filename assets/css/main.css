@@ -1,78 +1,95 @@
 /* main.css */
-@import './base/reset.css';
-@import './base/variables.css';
-@import './layout/header.css';
-@import './layout/footer.css';
-@import './layout/layout.css';
-@import './components/button.css';
-@import './pages/home.css';
-@import './pages/reviewsDelivery.css';
-@import './pages/submitReview.css';
-@import './pages/about.css';
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./layout/header.css";
+@import "./layout/footer.css";
+@import "./layout/layout.css";
+@import "./components/button.css";
+@import "./pages/home.css";
+@import "./pages/reviewsDelivery.css";
+@import "./pages/submitReview.css";
+@import "./pages/about.css";
 
 @media (max-width: 1024px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 40px;
-    }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+  }
 
-    .hero-buttons {
-        justify-content: center;
-    }
+  .hero-buttons {
+    justify-content: center;
+  }
 
-    .hero-description {
-        margin: 0 auto 40px auto;
-    }
+  .hero-description {
+    margin: 0 auto 40px auto;
+  }
 
-    .about-section {
-        flex-direction: column;
-    }
-    
-    .submit-review-container {
-        flex-direction: column;
-    }
+  .about-section {
+    flex-direction: column;
+  }
+
+  .submit-review-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
-    .about-gallery{
-        display: none; 
-    }
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
+    .hero-buttons{
+        display: flex; 
+        flex-direction: column; 
+        gap: 15px;
+        align-items: center;  
     }
 
-    .hero-grid {
-        flex-direction: column;
-        height: auto;
-    }
+  .businesses-grid {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: auto;
+  }
 
-    .main-card {
-        flex-direction: column;
-    }
+  .businesses-grid > :nth-child(5),
+  .businesses-grid > .special,
+  .businesses-grid > :nth-child(6) {
+    grid-column: auto !important;
+  }
+  .about-gallery {
+    display: none;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
 
-    .main-card-image {
-        height: 200px;
-    }
+  .hero-title {
+    font-size: 2.5rem;
+  }
 
-    .peek-card {
-        height: 200px;
-    }
-    
-    .reviews-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .social-col {
-        justify-content: center;
-    }
+  .hero-grid {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-card {
+    flex-direction: column;
+  }
+
+  .main-card-image {
+    height: 200px;
+  }
+
+  .peek-card {
+    height: 200px;
+  }
+
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-col {
+    justify-content: center;
+  }
 }
